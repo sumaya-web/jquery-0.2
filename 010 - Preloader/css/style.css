@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #391796;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: fantasy;
+    display: inline-block;
+    margin: 0 43%;
+    cursor: pointer;
+    border-bottom: 1px solid
+        #310e81;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.main {
+    background-color: #ddd;
+    padding: 300px 0;
+    height: 735px;
+    position: relative;
+    z-index: 1;
+}
+
+.main::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/heart.gif");
+    z-index: -1;
+}
+
+h1 {
+    text-align: center;
+    font-size: 46px;
+    padding-bottom: 30px;
+    color: #222;
+    font-weight: 900;
+    font-family: Arial,
+        Helvetica, sans-serif;
+}
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #0c0c0c;
+    z-index: 999999999;
+}
+
+.preloader img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(
+        -50%,
+        -50%
+    );
+}
