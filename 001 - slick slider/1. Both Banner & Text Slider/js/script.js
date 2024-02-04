@@ -1,0 +1,16 @@
+$(function () {
+    "use strict";
+    $(".banner_slider").slick(
+        {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            dots: true,
+            prevArrow:
+                '<i class="fa-solid fa-circle-arrow-left prev_arrow"></i>',
+            nextArrow:
+                '<i class="fa-solid fa-circle-arrow-right next_arrow"></i>',
+        }
+    );
+});
