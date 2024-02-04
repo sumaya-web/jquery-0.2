@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+/* Todo => common css end */
+
+/* Todo => main css start */
+.main {
+    background-color: #ddd;
+    height: 735px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 46px;
+    color: #222;
+    font-weight: 900;
+    font-family: Arial,
+        Helvetica, sans-serif;
+    padding: 60px 0 80px;
+}
+
+#typed {
+    font-size: 24px;
+    color: #444;
+    font-weight: 700;
+    font-family: fantasy;
+}
+
+.typed-cursor {
+    color: #333;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.type_script {
+    text-align: center;
+}
+
+.items-to-display ul li {
+    flex-basis: 17.95%;
+}
+
+.items-to-display ul li img {
+    width: 100%;
+}
+
+.learn-more-links {
+    display: flex;
+    margin: 300px 0 0;
+    justify-content: center;
+}
+
+.learn-more-links a {
+    font-size: 20px;
+    color: #ddd;
+    padding: 10px 25px;
+    font-weight: 500;
+    font-family: fantasy;
+    background: #222;
+    margin-left: 20px;
+}
