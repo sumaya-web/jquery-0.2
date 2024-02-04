@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.clr {
+    clear: both;
+}
+/* Todo => common css end */
+
+/* Todo => main css start */
+.main {
+    background-color: #ddd;
+    height: 735px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 46px;
+    color: #222;
+    font-weight: 900;
+    font-family: Arial,
+        Helvetica, sans-serif;
+    padding: 20px 0 30px;
+}
+
+.menu > ul {
+    display: block flex;
+    justify-content: center;
+}
+
+.menu > ul li {
+    color: #666;
+    font-size: 26px;
+    font-weight: 500;
+    font-family: Cambria,
+        Cochin, Georgia, Times,
+        "Times New Roman",
+        serif;
+    margin: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all linear
+        0.2s;
+    position: relative;
+}
+
+.menu > ul li:hover {
+    color: #222;
+}
+
+.menu > ul li::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #000;
+    transition: all linear
+        0.4s;
+}
+
+.menu > ul li:hover::after {
+    width: 100%;
+}
+
+.menu > ul .active {
+    color: #222;
+    font-weight: 900;
+}
+
+.menu > ul .active::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #000;
+}
+
+.items-to-display {
+    height: 375px;
+}
+
+.items-to-display ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-top: 30px;
+}
+
+.items-to-display ul li {
+    flex-basis: 17.95%;
+}
+
+.items-to-display ul li img {
+    width: 100%;
+}
+
+.learn-more-links {
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+}
+
+.learn-more-links p {
+    font-size: 18px;
+    color: #222;
+    font-weight: 600;
+    font-family: Arial,
+        Helvetica, sans-serif;
+    padding: 10px 25px;
+}
+
+.learn-more-links ul {
+    display: flex;
+}
+
+.learn-more-links ul li a {
+    font-size: 20px;
+    color: #ddd;
+    padding: 10px 25px;
+    font-weight: 500;
+    font-family: fantasy;
+    background: #222;
+    margin-left: 20px;
+}
